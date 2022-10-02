@@ -1,10 +1,10 @@
+// Sami Sekucoglu, 301206417
 import debug from 'debug';
 debug('comp-229');
 import http from 'http';
 
 import app from './app/app.js';
 
-app.use(express.static('public'));
 const PORT = normalizePort(process.env.PORT || 3000);
 app.set('port', PORT);
 
