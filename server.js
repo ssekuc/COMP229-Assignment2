@@ -4,6 +4,7 @@ import http from 'http';
 
 import app from './app/app.js';
 
+app.use(express.static('public'));
 const PORT = normalizePort(process.env.PORT || 3000);
 app.set('port', PORT);
 
