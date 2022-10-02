@@ -1,23 +1,67 @@
 {
+  
   "dependencies": {
-    "express": "^4.18.1"
+  
+    
+  "body-parser": "^1.20.0",
+  
+    
+  "cookie-parser": "^1.4.6",
+  
+    
+  "ejs": "^3.1.8",
+  
+    
+  "express": "^4.18.1",
+  
+    
+  "express-session": "^1.17.3",
+  
+    
+  "font-awesome": "^4.7.0",
+  
+    
+  "morgan": "^1.10.0"
+  
   },
+  
   "scripts": {
-    "start": "node server.js"
+  
+    
+  "start": "node server.js"
+  
   },
+  
   "name": "node",
+  
   "description": "",
+  
   "version": "1.0.0",
+  
   "main": "server.js",
-  "devDependencies": {},
+  
+  "type": "module",
+  
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ssekuc/COMP229-Assignment1.git"
+  
+    
+  "type": "git",
+  
+    
+  "url": "git+https://github.com/ssekuc/COMP229-Assignment1.git"
+  
   },
+  
   "author": "Sami Sekucoglu",
+  
   "license": "ISC",
+  
   "bugs": {
-    "url": "https://github.com/ssekuc/COMP229-Assignment1/issues"
+  
+    
+  "url": "https://github.com/ssekuc/COMP229-Assignment1/issues"
+  
   },
+  
   "homepage": "https://github.com/ssekuc/COMP229-Assignment1#readme"
 }
