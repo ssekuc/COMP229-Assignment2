@@ -21,13 +21,7 @@
   "font-awesome": "^4.7.0",
   
     
-  "mongoose": "^6.6.5",
-  
-    
-  "morgan": "^1.10.0",
-  
-    
-  "nodemon": "^2.0.20"
+  "morgan": "^1.10.0"
   
   },
   

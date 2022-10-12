@@ -1,4 +1,3 @@
-// app.js, Sami Sekucoglu, 301206417, 01.10.2022 
 export function displayHomePage(req, res, next) {
     res.render('index', { title: 'Home', page: 'home', myName: 'Sami'} );
 };
