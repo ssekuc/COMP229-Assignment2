@@ -20,15 +20,27 @@ let localStrategy = passportLocal.Strategy;
 // Auth Step 3 - import the user model
 import user from './models/user.js';
 
+// Import Mongoose
+import mongoose from 'mongoose';
+
 // Configuration Module
-import { Secret } from '../config/config.js';
+import { MongoURI, Secret } from '../config/config.js';
 
 // Import Routes
 import indexRouter from './routes/index.route.server.js'
 import authRouter from './routes/auth.route.server.js'
+import businessRouter from './routes/business.route.server.js';
 
 // Instantiate Express Application
 const app = express();
+
+// Complete the DB Configuration
+mongoose.connect(MongoURI);
+const db = mongoose.connection;
+
+//Listen for connection success or error
+db.on('open', () => console.log("Connected to MongoDB"));
+db.on('error', () => console.log("Mongo Connection Error"));
 
 // Set Up Middlewares
 
@@ -68,6 +80,7 @@ passport.deserializeUser(user.deserializeUser());
 // Use Routes
 app.use('/', indexRouter);
 app.use('/', authRouter);
+app.use('/', businessRouter);
 
 
 export default app;

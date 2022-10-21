@@ -15,7 +15,13 @@
         <!-- Main -->
         <main>
             <!-- 'content/nameofthepage.ejs' -->        
-            <%- include('content/' + page + '.ejs'); %>
+            <% if(page == 'business-list'){ %>
+                
+                <%- include('content/business/' + page + '.ejs'); %>
+              <% } else{ %>  
+                <%- include('content/' + page + '.ejs'); %>
+             <% } %>
+          
         </main>        
         <!-- Footer -->
         <footer>

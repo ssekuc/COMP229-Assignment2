@@ -11,7 +11,7 @@ export function DisplayLoginPage(req, res, next) {
         return res.render('index', {title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req)})
     }
 
-    return res.redirect('/movie-list')
+    return res.redirect('/business-list')
 }
 
 export function DisplayRegisterPage(req, res, next) {
@@ -19,7 +19,7 @@ export function DisplayRegisterPage(req, res, next) {
         return res.render('index', {title: 'Register', page: 'register', messages: req.flash('RegisterMessage'), displayName: UserDisplayName(req)})
     }
 
-    return res.redirect('/business-contact-list')
+    return res.redirect('/business-list')
 }
 
 export function ProcessLoginPage(req, res, next) {
