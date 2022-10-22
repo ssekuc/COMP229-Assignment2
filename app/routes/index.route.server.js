@@ -18,5 +18,4 @@ router.get('/services', displayServicesPage);
 router.get('/contact', displayContactPage);
 router.get('/redirect', button)
 router.get('/business-list', displayBusinessPage);
-router.get('/business-add', displayBusinessPage);
 export default router;

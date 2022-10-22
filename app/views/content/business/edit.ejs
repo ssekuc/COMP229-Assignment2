@@ -6,32 +6,32 @@
             <form class="form" method="POST">
                 <input type="hidden" name="id" value="<%= business._id %>" >
                 <div class="form-group">
-                    <label for="nameTextField">Movie Title</label>
+                    <label for="nameTextField">Full Name</label>
                     <input type="text" class="form-control"
                     id="nameTextField"
-                    placeholder="Enter the Movie Title"
+                    placeholder="Enter Full Name"
                     name="name" 
                     value="<%= business.name %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="authorTextField">Year</label>
+                    <label for="authorTextField">Phone Number</label>
                     <input type="number" class="form-control"
                     id="authorTextField"
-                    placeholder="Enter the Release Year"
+                    placeholder="Enter the Phone Number"
                     name="year" 
-                    value="<%= business.year %>"
+                    value="<%= business.number %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="publishedTextField">Director</label>
+                    <label for="publishedTextField">E-mail Address</label>
                     <input type="text" class="form-control"
                     id="publishedTextField"
-                    placeholder="Enter the Director's Name"
+                    placeholder="Enter E-mail Address"
                     name="director" 
-                    value="<%= business.director %>"
+                    value="<%= business.email %>"
                     required>
                 </div>
 

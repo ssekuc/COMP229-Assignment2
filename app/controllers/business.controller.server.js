@@ -15,7 +15,7 @@ export function DisplayBusinessList (req, res, next) {
 }
 
 export function DisplayBusinessAddPage(req, res, next) {
-    res.render('index', {title: 'Add Business', page: 'business/edit', displayName: UserDisplayName(req)});
+    res.render('index', {title: 'Add Business', page: 'business/edit', business: {}, displayName: UserDisplayName(req)});
 }
 
 export function ProcessBusinessAddPage(req, res, next) {
@@ -32,6 +32,7 @@ export function ProcessBusinessAddPage(req, res, next) {
             res.end(err);
         };
 
+        
         res.redirect('/business-list')
     })
 }

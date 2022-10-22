@@ -27,10 +27,24 @@ export function displayBusinessPage(req, res, next) {
     res.render('index', {title: 'Business', page: 'business-list', business: busModel, displayName: UserDisplayName(req)});
 }
 
+export function displayBusinessAddPage(req, res, next) {
+    const busModel = businessModel.find({});
+    res.render('index', {title: 'Business', page: 'business-add', business: busModel, displayName: UserDisplayName(req)});
+}
 
+export function ProcessBusinessAddPage(req, res, next) {
+    const busModel = businessModel.find({});
+    res.render('index', {title: 'Business', page: 'business-add', business: busModel, displayName: UserDisplayName(req)});
+}
+
+export function ProcessBusinessEditPage(req, res, next) {
+
+    res.render('index', {title: 'Business', page: '/business-edit', business: busModel, displayName: UserDisplayName(req)});
+}
 
 export function DisplayBusinessEditPage(req, res, next) {
-    res.render('index', {title: 'edit', page: 'edit', displayName: UserDisplayName(req)});
+
+    res.render('index', {title: 'Business', page: '/business-edit', business: busModel, displayName: UserDisplayName(req)});
 }
 
 export function button(req, res, next) {

@@ -20,7 +20,8 @@
                 </thead>
                 <tbody id="businessList">
                     <!-- Repeatable Rows -->
-                    <% for(let count = 0; count < business.length; count++) { %>
+                    <li><% for(let count = 0; count < business.length; count++) { %> </li>
+                       
                         <tr>
                             <th scope="row" class="text-center"><%= count + 1 %></th>
                             <td><%= business[count].name %></td>
