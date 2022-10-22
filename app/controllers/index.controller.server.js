@@ -27,6 +27,12 @@ export function displayBusinessPage(req, res, next) {
     res.render('index', {title: 'Business', page: 'business-list', business: busModel, displayName: UserDisplayName(req)});
 }
 
+
+
+export function DisplayBusinessEditPage(req, res, next) {
+    res.render('index', {title: 'edit', page: 'edit', displayName: UserDisplayName(req)});
+}
+
 export function button(req, res, next) {
     res.render('index', {title: 'About Me', page: 'about', displayName: UserDisplayName(req)});
 }

@@ -7,6 +7,7 @@ import { displayAboutPage,
     displayBusinessPage,
     button } from "../controllers/index.controller.server.js";
 
+
 const router = Router();
 
 router.get('/', displayHomePage);
@@ -17,5 +18,5 @@ router.get('/services', displayServicesPage);
 router.get('/contact', displayContactPage);
 router.get('/redirect', button)
 router.get('/business-list', displayBusinessPage);
-
+router.get('/business-add', displayBusinessPage);
 export default router;

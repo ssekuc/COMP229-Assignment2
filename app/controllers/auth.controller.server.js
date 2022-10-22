@@ -39,7 +39,7 @@ export function ProcessLoginPage(req, res, next) {
                 console.error(err);
                 res.end(err);
             }
-            return res.redirect('/');
+            return res.redirect('/business-list');
         })
     })(req, res, next);
 }

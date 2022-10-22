@@ -1,6 +1,6 @@
-export function UserDisplayName(req) {
-    if(req.user) {
-        return req.user.UserDisplayName;
+export function UserDisplayName(req){
+    if(req.user){
+        return req.user.displayName;
     }
     return '';
 }
