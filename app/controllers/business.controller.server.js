@@ -3,7 +3,10 @@ import businessModel from '../models/business.js';
 import { UserDisplayName } from '../utils/index.js';
 
 export function DisplayBusinessList (req, res, next) {
+    console.log("HERE!!!!!")
+
     businessModel.find(function(err, businessCollection) {
+        console.log(businessCollection)
         if(err) {
             console.error(err);
             res.end(err);

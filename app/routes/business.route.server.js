@@ -12,7 +12,7 @@ import  { AuthGuard } from "../utils/index.js";
 const router = Router();
 
 router.get('/business-list', DisplayBusinessList);
-router.get('/business-add', AuthGuard, DisplayBusinessAddPage);
+router.get('/business-add', DisplayBusinessAddPage);
 router.post('/business-add', AuthGuard, ProcessBusinessAddPage);
 router.post('/business-edit/:id', AuthGuard, ProcessBusinessEditPage);
 router.get('/business-edit/:id', AuthGuard, DisplayBusinessEditPage);
